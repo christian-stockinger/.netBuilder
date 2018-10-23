@@ -8,7 +8,7 @@ node {
         ])
     ])
 
-    def imageName = "christianstockinger/dotnetBuilder"
+    def imageName = "christianstockinger/dotnet-builder"
     def credentials = 'dockerhub'
     def registry = 'https://registry.hub.docker.com'
     def app
