@@ -14,10 +14,5 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 # Install dependencies
 RUN	apt-get install -y mono-devel nuget mono-xbuild
 
-# Import certificates
-RUN certmgr -ssl https://nugetgallery.blob.core.windows.net && \
-    certmgr -ssl https://nuget.org && \
-    certmgr -ssl https://go.microsoft.comapt-get update
-
 # Update nuget
 RUN nuget update -self
